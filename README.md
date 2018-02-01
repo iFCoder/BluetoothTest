@@ -117,8 +117,8 @@ public void setBluetooth() {
           }
       }
   }
-    ```
-
+```
+    
 ### （4）通讯服务（BluetoothSocket & BluetoothServerSocket）
 
 在Demo中，BluetoothSocket和BluetoothServerSocket的初始化已经通讯功能都在BluetoothChatService类完善，由于代码比较多，这里主要就说明主要功能，大家也可以参考Google的官方Demo：[BluetoothChat](https://github.com/googlesamples/android-BluetoothChat)
