@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_bluetooth"
+        android:icon="@android:drawable/stat_sys_data_bluetooth"
+        android:title="Server"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_server"
+        android:icon="@mipmap/icon_server"
+        android:title="Server"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/action_wifi"
+        android:icon="@mipmap/icon_wifi"
+        android:title="Wifi"
+        app:showAsAction="always"/>
+
+</menu>

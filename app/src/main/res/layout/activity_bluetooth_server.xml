@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--蓝牙开关-->
+    <include layout="@layout/bluetooth_open_close"/>
+
+
+    <!--本地蓝牙信息-->
+    <include layout="@layout/bluetooth_info"/>
+
+
+    <!--已连接蓝牙信息-->
+    <LinearLayout
+        android:id="@+id/ll_connect_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:visibility="invisible">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#a8a8a8"/>
+
+        <TextView
+            android:id="@+id/tv_connect_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:drawableLeft="@mipmap/icon_complete"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            tools:text="蓝牙"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#a8a8a8"/>
+    </LinearLayout>
+
+
+    <!--接收消息-->
+    <TextView
+        android:id="@+id/tv_server"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="Message"/>
+
+
+    <!--本机设备信息-->
+   <include layout="@layout/info_device"/>
+
+</LinearLayout>
